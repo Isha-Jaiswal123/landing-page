@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #050a30;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+.logo{
+ 
+    margin-left: 20px;
+}
+.logo img{
+    height:4rem;
+    width: 6rem;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav-content li{
+    list-style: none;
+    height: 2rem;
+    width: 5rem;
+   border-radius:13px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 19px;
+}
+.nav-content li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-content li a:hover{
+    color: gray;
+}
+.select option{
+    background-color: #050a30;
+    color: white;
+}
+.btn1{
+height: 2rem;
+width: 7rem;
+border-radius: 7px;
+background-color: #7ec8e3;
+border: 2px solid #7ec8e3;
+}
+.btn1:hover{
+background-color: #050a30;
+color: white;
+cursor: pointer;
+}
+.btn2{
+    height: 2rem;
+    width: 7rem;
+   margin-left: 5px;
+    background-color: #050a30;
+    border: 2px solid #050a30;
+    color: white;
+}
+.btn2:hover{
+    background-color: #7ec8e3;
+    border: 2px solid #050a30;
+color: black;
+cursor: pointer;
+}
+.home{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  padding: 45px;
+    background-color: #7ec8e3;
+ 
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left h1{
+    font-size:50px;
+}
+.left h3{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.mail input{
+    height: 2rem;
+    width:23rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.right img{
+    height: 70vh;
+border-radius:300px;
+}
+.right img:hover{
+    height: 74vh;
+}
+i{
+    
+    color: white;
+    font-size: 20px;
+   
+}
+.bar{
+ display: none;
+}
+.barclick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #050a30;
+    color: white;
+display: none;
+}
+.barclick li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.barclick li a{
+    text-decoration: none;
+    color: white;
+}
+.barclick .btn1{
+    margin: 10px 0px;
+}
+
+@media(max-width:700px){
+    .nav-content li{
+        display: none;
+    }
+    .nav-content .btn1{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+}
+@media(max-width:850px){
+    .home{
+        display: block;
+    }
+   .left{
+    margin-bottom: 25px;
+   }
+}
+@media(max-width:530px){
+    .mail input{
+        height: 2rem;
+        width:17rem;
+    }
+}
+@media(max-width:430px){
+    .left h1{
+        font-size:30px;
+    }
+    .mail{
+        display: block;
+      
+    }
+    .btn2{
+        height: 2rem;
+        width: 7rem;
+      margin:5px 70px;
+        background-color: #050a30;
+        border: 2px solid #050a30;
+        color: white;
+    }
+}
